@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   let estudantes = [];
+let nome;
+
+while((nome = prompt("Digite o nome do estudante ou 'PARE' para parar:")) !== "PARE") {
+    estudantes.push(nome);
+}
+
+alert(`Total de estudantes cadastrados: ${estudantes.length}\n${estudantes.join("\n")}`);
+
+    </script>
+</body>
+</html>

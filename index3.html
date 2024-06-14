@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Vamos criar sua lista de compras!");
+
+let frutas = ["maçã", "banana", "laranja", "manga", "uva"];
+alert("Sua lista de frutas atual é: " + frutas.join(", "));
+
+while (frutas.length > 0) {
+  let frutaEscolhida = prompt("Digite o nome de uma das frutas para retirar da lista:");
+
+  if (frutas.includes(frutaEscolhida)) {
+    frutas = frutas.filter(fruta => fruta !== frutaEscolhida);
+    alert("Fruta foi retirada da lista");
+    
+    if (frutas.length > 0) {
+      alert("Sua lista de frutas agora é: " + frutas.join(", "));
+    }
+  } else {
+    alert("Fruta indisponível no nosso mercado");
+  }
+}
+
+alert("Lista de compras finalizada");
+
+    </script>
+</body>
+</html>
